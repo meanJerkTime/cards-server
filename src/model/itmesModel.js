@@ -13,6 +13,8 @@ const items = new mongoose.Schema({
   numberOfHands: {type: Number}, //this is how many hands a weapon/item uses i.e. 1 hand, 2 hand, -2 hands etc.
   bigItem: {type: Boolean},
   modifier: {type: Number}, //the bonus given to combat
+  effect: {type: String},// any other effect the card provides i.e. +1 to run away
+  other: {type: String},// for use with Steal a Level, Mutilate the Bodies, Contemplate Navel etc. 
 
 });
 
